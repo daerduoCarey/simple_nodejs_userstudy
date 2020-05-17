@@ -1,0 +1,50 @@
+body {
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+    font-weight: 300;
+    text-align: left;
+}
+
+h3 {
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 20px;
+  color: red;
+}
+
+#text {
+  font-weight: 300;
+  margin: 0px;
+  padding: 10px;
+  font-size: 30px;
+  color: #444;
+  padding-top: 25px;
+}
+
+.rate_struct {
+    float: left;
+    width: 30%;
+    border-style: solid;
+    height: 100%;
+    overflow: scroll;
+}
+
+.rate_geo {
+    float: left;
+    width: 30%;
+    border-style: solid;
+    height: 100%;
+    overflow: scroll;
+}
+
+.rate_div {
+    float: left;
+    width: 30%;
+    border-style: solid;
+    height: 100%;
+    overflow: scroll;
+}
+
+

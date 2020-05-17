@@ -1,0 +1,13 @@
+var config = exports;
+
+config.host = 'http://[XXX.XXX.XXX.XXX]';
+config.port = '8080';
+
+config.img_dir = '[ABSOLUTE_PATH]/simple_nodejs_userstudy/data/';
+
+config.db_host = 'localhost';
+config.db_user = 'root';
+config.db_passwd = '[YOUR_PASSWORD]';
+config.db_name = '[YOUR_DATABASE]';
+
+config.num_figs = [TOTAL_NUMBER_OF_IMAGES_UNDER_EACH_ALG_FOLDER];

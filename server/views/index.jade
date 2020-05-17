@@ -1,0 +1,62 @@
+doctype html
+html
+    head
+        title= 'User Study'
+        link(rel='stylesheet', href='/css/index.css')
+        link(rel="stylesheet", href="/css/bootstrap.min.css",
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u", crossorigin="anonymous")
+    body
+        script(type='text/javascript' src='/client/bundle.js')
+        script(type='text/javascript' src='/js/jquery.min.js')
+
+        h4 Thank you for doing this user study! You will be asked to do 10 questions in this section (should be in 10 minutes). Thank you for help!
+        h4#progress_text <strong>Current Progress: 0/10</strong>
+        h4 <strong>Please rank the following three sets of generated shape results A/B/C (e.g. A>B>C means A is better than B and C is the worst). Each line shows five generated shapes (NO ORDER) from one algorithm.</strong> 
+        h3 <strong> Algorithm A: five generated shapes (NO ORDER)</strong>
+        #resA_figures
+        h3 <strong> Algorithm B: five generated shapes (NO ORDER)</strong>
+        #resB_figures
+        h3 <strong> Algorithm C: five generated shapes (NO ORDER)</strong>
+        #resC_figures
+
+        br
+        h4 <strong>Please rank algorithms A/B/C under THREE criterion:</strong>
+        h4 <strong>1) Rank Shape-Structures:</strong> Is there clear shape parts and structures? Which one is more complicated?
+        select#struct_score
+            option(value='NONE') Not Answered!
+            option(value='012') A > B > C
+            option(value='021') A > C > B
+            option(value='102') B > A > C
+            option(value='120') B > C > A
+            option(value='201') C > A > B
+            option(value='210') C > B > A
+
+        br
+        h4 <strong>2) Rank Shape-Geometry:</strong> Are there artifacts on shapes? Do they look nice?
+        select#geo_score
+            option(value='NONE') Not Answered!
+            option(value='012') A > B > C
+            option(value='021') A > C > B
+            option(value='102') B > A > C
+            option(value='120') B > C > A
+            option(value='201') C > A > B
+            option(value='210') C > B > A
+
+        br
+        h4 <strong>3) Give an Overall Ranking:</strong> Considering all the factors, give a final ranking for how well you like the results.
+        select#all_score
+            option(value='NONE') Not Answered!
+            option(value='012') A > B > C
+            option(value='021') A > C > B
+            option(value='102') B > A > C
+            option(value='120') B > C > A
+            option(value='201') C > A > B
+            option(value='210') C > B > A
+
+        br
+        button(type="button" class="btn btn-primary" id="next" style="float:center" onclick="annotator.next()") Next
+        
+        script.
+            var annotator = new Annotator();
+            annotator.start();
+
