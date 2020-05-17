@@ -11,3 +11,5 @@ config.db_passwd = '[YOUR_PASSWORD]';
 config.db_name = '[YOUR_DATABASE]';
 
 config.num_figs = [TOTAL_NUMBER_OF_IMAGES_UNDER_EACH_ALG_FOLDER];
+config.num_figs_to_show = [HOW_MANY_FIGURES_TO_SHOW_PER_LINE];
+config.num_questions = [HOW_MANY_QUESTIONS_TO_ASK_PER_SURVERY];
